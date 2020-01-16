@@ -1,5 +1,4 @@
-pipleline {
-  agent 'ansible2.3.2'
+node {
   stages {
     stage('test') {
       steps {
