@@ -1,7 +1,8 @@
-node {
-	stage('test') {
-		echo 'Testing java'
-		sh 'java -version'
-		sh label: '', script: 'cat HelloWorld.java'
+pipeline {
+	agent label 'ansible2.3.2'
+	stages {
+		stage('test') {
+			echo 'test-hello-world'
+		}
 	}
 }
